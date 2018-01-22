@@ -1,14 +1,14 @@
-###Library versions used
-– Python 3.4.3
-– Django 2.0.1
-– Bootstrap v4.0.0
-– jQuery 3.2.1
+### Library versions used
+– Python 3.4.3  
+– Django 2.0.1  
+– Bootstrap v4.0.0  
+– jQuery 3.2.1  
 
 
-####Functionality
-A really simple `TodoItem` model is served by 5 views / urls: `tasks`, `item`, `solve`, `save` and `remove`.  Another view passes the `index` / main template. 
+#### Functionality
+A really simple `TodoItem` model is served by 5 views / urls: `tasks`, `item`, `solve`, `save` and `remove`.  Another view passes the `index` / main template.   
 
-All views / urls except `index` is AJAX handled by `static/todo.js`.
+All views / urls except `index` is AJAX handled by `static/todo.js`.  
 
 A list of tasks:  
 ![basic](README-images/ss1.png)  
