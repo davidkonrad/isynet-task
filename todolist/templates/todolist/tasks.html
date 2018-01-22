@@ -1,0 +1,37 @@
+				{% if todoitem_list %}
+				<ul class="list-group list-group-flush">
+					{% for item in todoitem_list %}
+					<li class="list-group-item" id="todo-task-{{ item.id }}">
+						<a class="collapsed {% if item.solved_timestamp %} text-danger {% endif %}" data-toggle="collapse" href="#todo-item-desc-{{ item.id }}" aria-expanded="true">
+							<i class="fa fa-caret-up text-muted"></i>
+							{{ item.title }}
+						</a>
+						<div class="card-block collapse" id="todo-item-desc-{{ item.id }}">
+							<br>
+							<h6 class="card-subtitle text-muted small pull-left">Created: {{ item.created_timestamp }}</h6>
+							{% if item.solved_timestamp %}
+							<h6 class="card-subtitle text-muted small pull-right"><strong>Solved</strong>: {{ item.solved_timestamp }}</h6>
+							{% endif %}
+							<br>
+							<p>{{ item.description }}</p>
+							<button type="button" class="btn btn-default btn-sm btn-todo-action pull-right text-danger" onclick="Todo.remove({{ item.id }})" title="Remove task">
+								<i class="fa fa-remove fa-fw"></i>
+							</button>
+							{% if not item.solved_timestamp %}
+							<button type="button" class="btn btn-primary btn-sm btn-todo-action pull-right" onclick="Todo.solve({{ item.id }})" title="Mark task as solved">
+								<i class="fa fa-check fa-fw"></i>
+								Mark as solved
+							</button>
+							<button type="button" class="btn btn-primary btn-sm btn-todo-action pull-right" onclick="Todo.edit({{ item.id }})" title="Edit task title and description">
+								<i class="fa fa-edit fa-fw"></i>
+								Edit
+							</button>
+							{% endif %}
+						</div>
+					</li>
+					{% endfor %}
+				</ul>
+				{% else %}
+				<p>No todo items are available.</p>
+				{% endif %}
+

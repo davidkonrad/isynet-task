@@ -1,0 +1,17 @@
+.list-group-item .collapsed .fa {
+	transform: rotate(180deg);
+}
+.list-group-item .fa {
+	transition: .3s transform ease-in-out;
+}
+.list-group-item a {
+	text-decoration: none;
+}
+.btn-todo-action {
+	margin-left: 6px;
+}
+.btn-action-new {
+	margin-top: 7px;
+	position: relative;
+}
+
