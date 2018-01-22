@@ -10,14 +10,14 @@ A really simple `TodoItem` model is served by 5 views / urls: `tasks`, `item`, `
 
 All views / urls except `index` is AJAX handled by `static/todo.js`.
 
-A list of tasks:
-![basic](README-images/ss1.png)
+A list of tasks:  
+![basic](README-images/ss1.png)  
+   
+Tasks can be expanded to view details:  
+![details](README-images/ss2.png)  
 
-Tasks can be expanded to view details:
-![details](README-images/ss2.png)
-
-A task that is not marked as solved can be edited or deleted (besides be marked as solved):
-![edit](README-images/ss3.png)
-
-A solved task have a distinct red colored title. It can no longer be edited but still be removed: 
-![edit](README-images/ss4.png)
+A task that is not marked as solved can be edited or deleted (besides be marked as solved):  
+![edit](README-images/ss3.png)  
+   
+A solved task have a distinct red colored title. It can no longer be edited but still be removed:   
+![edit](README-images/ss4.png)  
