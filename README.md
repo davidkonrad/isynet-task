@@ -6,9 +6,7 @@
 
 
 ### Functionality
-A really simple `TodoItem` model is served by 5 views / urls: `tasks`, `item`, `solve`, `save` and `remove`.  Another view passes the `index` / main template.   
-
-All views / urls except `index` is AJAX handled by `static/todo.js`.  
+A really simple `TodoItem` model is served by 5 views / urls: `tasks`, `item`, `solve`, `save` and `remove`.  Another view passes the `index` / main template.   All views / urls except `index` is AJAX handled by `static/todo.js`. 
 
 <br>
    
